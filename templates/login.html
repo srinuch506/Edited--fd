@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faculty-login</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-image:url("https://www.shethepeople.tv/wp-content/uploads/2018/03/Women-writers-generic.jpg");
+            background-size:cover;
+        }
+        label{
+            color:black;
+        }
+        .btnstyle{
+            background-color:pink;
+            color:black;
+            padding: 10px;
+            border-radius:10px;
+            border:10px;
+            margin:5px;
+            cursor:pointer;
+            font-weight:bold;
+        }
+        </style>
+</head>
+<body>
+    <center>
+        <h1 style="color:black">Faculty Login</h1></center>
+        <div style="margin-left:42%;; margin-top:5%">
+        <form method="POST">
+            <label><b><h3>Faculty id:</label></b></h3>
+            <p><input placeholder="Enter faculty id"type="text" name="fid" required/></p>
+            <label><b><h3></h3>Password:</label></b></h3>
+            <p><input placeholder="Enter password"type="text" name="password" required/></p>
+            <a href ="{{url_for('dashboard')}}"><h3><button class="btnstyle">Login</button></a>
+            <a href="{{url_for('register')}}" target="blank" style="color:black">No Account</a>
+            <p></p><a href="{{url_for('forget')}}" target="blank" style="color:black">Forget password?</a></p></h3>
+        </form>
+    </center

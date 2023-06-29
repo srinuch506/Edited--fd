@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            font-family:Arial, Helvetica, sans-serif,'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        body {
+            background-image: url("https://www.shethepeople.tv/wp-content/uploads/2018/03/Women-writers-generic.jpg");
+            background-size: cover;
+            font-size:larger;
+
+        }
+        .btnstyle {
+            background-color:goldenrod;
+            color:rgb(0, 0, 0);
+            padding:15px;
+            border-radius:10px;
+            border:none;
+            font-size: 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .student {
+            margin-top:10%; 
+        }
+    </style>
+</head>
+<body>
+    <div class="student">
+    <center><h1><b>Feedback Information System</h1></center></b>
+    </div>
+    <div style="text-align:center;">
+    <a href="{{url_for('register')}}"><button class="btnstyle">Register</button></a>
+    <a href="{{url_for('login')}}"><button class="btnstyle">Login</button></a>
+    </div>
+</body>
+</html>
